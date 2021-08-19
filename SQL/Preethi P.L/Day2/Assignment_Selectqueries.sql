@@ -46,7 +46,7 @@ SELECT * FROM employees ORDER BY FirstName DESC;
 
 SELECT EmployeeID, CONCAT(FirstName," ",LastName) AS Names,Salary FROM employees ORDER BY Salary ASC;
 
-/*Select TOP 2 salary from employee table*/
+/*Select TOP 2 salary from employee table */
 
 SELECT Salary FROM employees ORDER BY Salary DESC LIMIT 2;
 

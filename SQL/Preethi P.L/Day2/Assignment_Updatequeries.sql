@@ -18,7 +18,7 @@ UPDATE employees SET Email = 'not available' WHERE DepartmentID = 80 AND Commiss
 
 UPDATE employees SET Email = 'not available' WHERE DepartmentID = (SELECT DepartmentID FROM departments WHERE DepartmentName = 'Accounting');
 
-/*Write a SQL statement to change salary of employee to 8000 whose ID is 105, if the existing salary is less than 5000.*/
+/* Write a SQL statement to change salary of employee to 8000 whose ID is 105, if the existing salary is less than 5000.*/
 
 UPDATE employees SET Salary=8000 WHERE EmployeeID=105 AND Salary<5000;
 
