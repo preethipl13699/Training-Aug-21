@@ -84,7 +84,21 @@ function checkdate(date)
             }
 }
 
-// Check if any field is empty
+//Check if any field is empty using for loop
+function isempty()
+{
+    var check = document.getElementsByTagName("input");
+    for(var i=0; i < check.length; i++)
+    {
+        if (check[i].value == "")
+        {
+            var x = alert("Field cannot be empty");
+            x.close();
+        }
+    }
+}
+
+// Check if any field is empty(method2)
 // function isempty()
 // {
 //     var id = document.getElementById("id").value;
@@ -129,16 +143,3 @@ function checkdate(date)
 //     }
 // }
 
-//Check if any field is empty using for loop
-function isempty()
-{
-    var check = document.getElementsByTagName("input");
-    for(var i=0; i < check.length; i++)
-    {
-        if (check[i].value == "")
-        {
-            var x = alert("Field cannot be empty");
-            x.close();
-        }
-    }
-}
