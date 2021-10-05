@@ -84,62 +84,79 @@ function checkdate(date)
             }
 }
 
-//Check if any field is empty using for loop
+// Check if any field is empty
 function isempty()
 {
-    var check = document.getElementsByTagName("input");
-    for(var i=0; i < check.length; i++)
+    var id = document.getElementById("id").value;
+    var name = document.getElementById("name").value;
+    var age = document.getElementById("age").value;
+    var designation = document.getElementById("designation").value;
+    var salary = document.getElementById("salary").value;
+    var email = document.getElementById("email").value;
+    var joiningdate = document.getElementById("joiningdate").value;
+    var contact = document.getElementById("contact").value;
+    if( id == "")
     {
-        if (check[i].value == "")
-        {
-            var x = alert("Field cannot be empty");
-            x.close();
-        }
+        alert("Id should not be empty!");
+    }
+    else if( name == "")
+    {
+        alert("Name should not be empty!");
+    }
+    else if( age == "")
+    {
+        alert("Age should not be empty!");
+    }
+    else if( designation == "")
+    {
+        alert("Designation should not be empty!");
+    }
+    else if( salary == "")
+    {
+        alert("Salary should not be empty!");
+    }
+    else if( email == "")
+    {
+        alert("Email should not be empty!");
+    }
+    else if( joiningdate == "")
+    {
+        alert("Date of Joining should not be empty!");
+    }
+    else if( contact == "")
+    {
+        alert("Contact Number should not be empty!");
+    }
+    else
+    {
+        window.open("http://127.0.0.1:5500/Day3/Assignment/formvalues.html");
     }
 }
 
-// Check if any field is empty(method2)
-// function isempty()
-// {
-//     var id = document.getElementById("id").value;
-//     var name = document.getElementById("name").value;
-//     var age = document.getElementById("age").value;
-//     var designation = document.getElementById("designation").value;
-//     var salary = document.getElementById("salary").value;
-//     var email = document.getElementById("email").value;
-//     var joiningdate = document.getElementById("joiningdate").value;
-//     var contact = document.getElementById("contact").value;
-//     if( id == "")
-//     {
-//         alert("Id should not be empty!");
-//     }
-//     else if( name == "")
-//     {
-//         alert("Name should not be empty!");
-//     }
-//     else if( age == "")
-//     {
-//         alert("Age should not be empty!");
-//     }
-//     else if( designation == "")
-//     {
-//         alert("Designation should not be empty!");
-//     }
-//     else if( salary == "")
-//     {
-//         alert("Salary should not be empty!");
-//     }
-//     else if( email == "")
-//     {
-//         alert("Email should not be empty!");
-//     }
-//     else if( joiningdate == "")
-//     {
-//         alert("Date of Joining should not be empty!");
-//     }
-//     else if( contact == "")
-//     {
-//         alert("Contact Number should not be empty!");
-//     }
-// }
+//Display form data in new page
+function display()
+{
+    //Store form data from previous page
+    var id = window.opener.document.getElementById("id").value;
+    var name = window.opener.document.getElementById("name").value;
+    var age = window.opener.document.getElementById("age").value;
+    var gender = window.opener.document.querySelector('input[name="gender"]:checked').value;
+    var designation = window.opener.document.getElementById("designation").value;
+    var salary = window.opener.document.getElementById("salary").value;
+    var location = window.opener.document.getElementById("location").value;
+    var email = window.opener.document.getElementById("email").value;
+    var joiningdate = window.opener.document.getElementById("joiningdate").value;
+    var contact = window.opener.document.getElementById("contact").value;
+
+    document.getElementById("id").innerHTML = "Employee id : "+id;
+    document.getElementById("name").innerHTML = "Name : "+name;
+    document.getElementById("age").innerHTML = "Age : "+age;
+    document.getElementById("gender").innerHTML = "Gender : "+gender;
+    document.getElementById("designation").innerHTML = "Designation : "+designation;
+    document.getElementById("salary").innerHTML = "Salary : "+salary;
+    document.getElementById("location").innerHTML = "Location : "+location;
+    document.getElementById("email").innerHTML = "Email : "+email;
+    document.getElementById("joiningdate").innerHTML = "Date of Joining : "+joiningdate;
+    document.getElementById("contact").innerHTML = "Contact Number : "+contact;
+}
 
