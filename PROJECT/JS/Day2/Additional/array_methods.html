@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark fs-3">
+        <div class="container">
+            <img class="navbar-brand" src="/assets/images/logo.jpg" id="logo" width="100" height="90">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item m-3">
+                        <a class="nav-link" href="/home.html">Home</a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link" href="/html-home.html">HTML</a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link" href="/css-home.html">CSS</a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link" href="/bootstrap-home.html">Bootstrap</a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link active" href="/js-home.html">Javascript</a>
+                    </li>
+                    <li class="nav-item m-3">
+                        <a class="nav-link" href="/jquery-home.html">jQuery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Sidebar-->
+    <nav class="navbar navbar-expand-md bg-light navbar-light d-flex flex-column align-items-start " id="sidebar">
+        <div class="container">
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#sidenav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse  navbar-collapse collapse-horizontal" id="sidenav">
+            <ul class="navbar-nav d-block fs-3">
+                <li class="nav-item dropdown w-100">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#jsday1" 
+                        aria-expanded="false" aria-controls="collapse">Day-1</a>
+                    <ul class="collapse" id="jsday1">
+                        <li><a href="/JS/Day1/Practice Exercise/PracticeExercise(1).html" class="nav-link">Practice Exercise-1</a></li>
+                        <li><a href="/JS/Day1/Practice Exercise/PracticeExercise(2).html" class="nav-link">Practice Exercise-2</a></li>
+                        <li><a href="/JS/Day1/Assignment/assignment(1).html" class="nav-link">Assignment</a></li>
+                    </ul>                        
+                </li>
+                
+                <li class="nav-item dropdown w-100">
+                    <a class="nav-link active dropdown-toggle" data-bs-toggle="collapse" href="#jsday2" 
+                        aria-expanded="false" aria-controls="collapse">Day-2</a>
+                    <ul class="collapse" id="jsday2">
+                        <li><a href="/JS/Day2/Practice Exercise/practice_exercise(1).html" class="nav-link">Practice Exercise-1</a></li>
+                        <li><a href="/JS/Day2/Practice Exercise/practice_exercise(2).html" class="nav-link">Practice Exercise-2</a></li>
+                        <li><a href="/JS/Day2/Practice Exercise/practice_exercise(3).html" class="nav-link">Practice Exercise-3</a></li>
+                        <li><a href="/JS/Day2/Practice Exercise/practice_exercise(4).html" class="nav-link">Practice Exercise-4</a></li>
+                        <li><a href="/JS/Day2/Practice Exercise/practice_exercise(5).html" class="nav-link">Practice Exercise-5</a></li>
+                        <li><a href="/JS/Day2/Assignment/assignment.html" class="nav-link">Assignment</a></li>
+                        <li><a href="/JS/Day2/Additional/array_methods.html" class="nav-link active">Array methods</a></li>
+                        <li><a href="/JS/Day2/Additional/date_methods.html" class="nav-link">Date Methods</a></li>
+                        <li><a href="/JS/Day2/Additional/number_methods.html" class="nav-link">Number Methods</a></li>
+                        <li><a href="/JS/Day2/Additional/string_methods.html" class="nav-link">String Methods</a></li>
+                    </ul>                        
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#jsday3" 
+                        aria-expanded="false" aria-controls="collapse">Day-3</a>
+                    <ul class="collapse" id="jsday3">
+                        <li><a href="/JS/Day3/Practice Exercise/exercise(1).html" class="nav-link">Practice Exercise-1</a></li>
+                        <li><a href="/JS/Day3/Practice Exercise/exercise(2).html" class="nav-link">Practice Exercise-2</a></li>
+                        <li><a href="/JS/Day3/Practice Exercise/exercise(3).html" class="nav-link">Practice Exercise-3</a></li>
+                        <li><a href="/JS/Day3/Practice Exercise/exercise(4).html" class="nav-link">Practice Exercise-4</a></li>
+                        <li><a href="/JS/Day3/Practice Exercise/exercise(5).html" class="nav-link">Practice Exercise-5</a></li>
+                        <li><a href="/JS/Day3/Practice Exercise/exercise(6).html" class="nav-link">Practice Exercise-6</a></li>
+                        <li><a href="/JS/Day3/Practice Exercise/exercise(7).html" class="nav-link">Practice Exercise-7</a></li>
+                        <li><a href="/JS/Day3/Practice Exercise/exercise(8).html" class="nav-link">Practice Exercise-8</a></li>
+                        <li><a href="/JS/Day3/Practice Exercise/exercise(9).html" class="nav-link">Practice Exercise-9</a></li>
+                        <li><a href="/JS/Day3/Assignment/assignment.html" class="nav-link">Assignment</a></li>
+                    </ul>                        
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#jsday4" 
+                        aria-expanded="false" aria-controls="collapse">Day-4</a>
+                    <ul class="collapse" id="jsday4">
+                        <li><a href="/JS/Day4/Practice Exercise/exercise(1).html" class="nav-link">Practice Exercise-1</a></li>
+                        <li><a href="/JS/Day4/Practice Exercise/exercise(2).html" class="nav-link">Practice Exercise-2</a></li>
+                        <li><a href="/JS/Day4/Practice Exercise/exercise(3).html" class="nav-link">Practice Exercise-3</a></li>
+                        <li><a href="/JS/Day4/Assignment/startexam.html" class="nav-link">Assignment</a></li>
+                        <li><a href="/JS/Day4/Additional/async_await.html" class="nav-link">Async & Await</a></li>
+                        <li><a href="/JS/Day4/Additional/asynchronous.html" class="nav-link">Asynchronous</a></li>
+                        <li><a href="/JS/Day4/Additional/callback.html" class="nav-link">Callback</a></li>
+                        <li><a href="/JS/Day4/Additional/promise.html" class="nav-link">Promise</a></li>
+                    </ul>                        
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#jsday5" 
+                        aria-expanded="false" aria-controls="collapse">Day-5</a>
+                    <ul class="collapse" id="jsday5">
+                        <li><a href="/JS/Day5/Practice Exercise/Exercise(1).html" class="nav-link">Practice Exercise-1</a></li>
+                        <li><a href="/JS/Day5/Practice Exercise/exercise(2).html" class="nav-link">Practice Exercise-2</a></li>
+                        <li><a href="/JS/Day5/Practice Exercise/exercise(3).html" class="nav-link">Practice Exercise-3</a></li>
+                        <li><a href="/JS/Day5/Practice Exercise/Exercise(4).html" class="nav-link">Practice Exercise-4</a></li>
+                        <li><a href="/JS/Day5/Practice Exercise/exercise(5).html" class="nav-link">Practice Exercise-5</a></li>
+                        <li><a href="/JS/Day5/Practice Exercise/exercise(6).html" class="nav-link">Practice Exercise-6</a></li>
+                    </ul>                        
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#jsday6" 
+                        aria-expanded="false" aria-controls="collapse">Day-6</a>
+                    <ul class="collapse" id="jsday6">
+                        <li><a href="/JS/Day6/Practice Exercise/Exercise(1).html" class="nav-link">Practice Exercise-1</a></li>
+                        <li><a href="/JS/Day6/Assignment/assignment.html" class="nav-link">Assignment</a></li>
+                    </ul>                        
+                </li>
+                
+            </ul>   
+        </div>
+    </div>
+    </nav>
+
+
+    <div class="container" id="content">
+
+
+    <!--Header-->
+    <div class="container text-center mt-2">
+        <h1 class="display1">ARRAY METHODS</h1>
+        <hr>
+    </div>
+    
+    <!--Main-->
+    <div class="container bg-light mt-3">
+        
+        <h3>toString()</h3>
+        <p id="1"></p>
+
+        <h3>join()</h3>
+        <p id="2"></p>
+
+        <h3>pop()</h3>
+        <p id="3"></p>
+        <p id="4"></p>
+        <p id="5"></p>
+
+        <h3>push()</h3>
+        <p id="6"></p>
+        <p id="7"></p>
+
+        <h3>shift()</h3>
+        <p id="8"></p>
+        <p id="9"></p>
+        <p id="10"></p>
+
+        <h3>unshift()</h3>
+        <p id="11"></p>
+        <p id="12"></p>
+
+        <h3>change element of array</h3>
+        <p id="13"></p>
+        <p id="14"></p>
+        
+        <h3>append elements to array using length</h3>
+        <p id="15"></p>
+        <p id="16"></p>
+
+        <h3>add items using splice()</h3>
+        <p id="17"></p>
+        <p id="18"></p>
+        
+        <h3>remove items splice()</h3>
+        <p id="19"></p>
+        <p id="20"></p>
+
+        <h3>concat()</h3>
+        <p id="21"></p>
+        <p id="22"></p>
+        <p id="23"></p>
+
+        <h3>slice()</h3>
+        <p id="24"></p>
+        <p id="25"></p>
+    </div> 
+</div>
+    <!--JS-->
+    <script>
+        var dept = ["PHP",".NET","Android","Nodejs"];
+        console.log(dept);
+        
+        document.getElementById("1").innerHTML = dept.toString();
+        document.getElementById("2").innerHTML = dept.join("/");
+        
+        document.getElementById("3").innerHTML = dept;
+        document.getElementById("4").innerHTML = "Popped item = "+dept.pop();
+        document.getElementById("5").innerHTML = dept;
+
+        dept.push("Java");
+        document.getElementById("6").innerHTML = dept;
+        document.getElementById("7").innerHTML = "New array length = "+dept.push();
+    
+        document.getElementById("8").innerHTML = dept;
+        document.getElementById("9").innerHTML = dept.shift();
+        document.getElementById("10").innerHTML = dept;
+
+        dept.unshift("Python");
+        document.getElementById("11").innerHTML = dept;
+        document.getElementById("12").innerHTML = "New array length = "+dept.unshift();
+    
+        document.getElementById("13").innerHTML = dept;
+        dept[0]="PHP";
+        document.getElementById("14").innerHTML = dept;
+
+        document.getElementById("15").innerHTML = dept;
+        dept[dept.length]="Python";
+        document.getElementById("16").innerHTML = dept;
+
+        document.getElementById("17").innerHTML = dept;
+        dept.splice(3,2,"HR","Sales");
+        document.getElementById("18").innerHTML = dept;
+
+        document.getElementById("19").innerHTML = dept;
+        dept.splice(0,1);
+        document.getElementById("20").innerHTML = dept;
+
+        var dept1 = ["Computer Science","IT"];
+        var dept2 = ["Mechanical","Civil"];
+        document.getElementById("21").innerHTML = "dept1 = "+dept1;
+        document.getElementById("22").innerHTML = "dept2 = "+dept2;
+        document.getElementById("23").innerHTML = dept1.concat(dept2);
+
+        document.getElementById("24").innerHTML = dept;
+        document.getElementById("25").innerHTML = dept.slice(2);
+
+        
+    </script>
+<script src="/assets/js/bootstrap.js"></script>
+</body>
+</html>

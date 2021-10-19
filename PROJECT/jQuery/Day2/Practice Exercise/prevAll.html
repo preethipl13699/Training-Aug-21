@@ -1,0 +1,122 @@
+<!--Create one paragraph, add some dummy text and apply blue background color using jquery-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siblings</title>
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("h3").prevAll().css("background-color","lightblue");
+        });
+    </script>
+</head>
+<body>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark fs-3">
+                <div class="container">
+                    <img class="navbar-brand" src="/assets/images/logo.jpg" id="logo" width="100" height="90">
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item m-3">
+                                <a class="nav-link" href="/home.html">Home</a>
+                            </li>
+                            <li class="nav-item m-3">
+                                <a class="nav-link" href="/html-home.html">HTML</a>
+                            </li>
+                            <li class="nav-item m-3">
+                                <a class="nav-link" href="/css-home.html">CSS</a>
+                            </li>
+                            <li class="nav-item m-3">
+                                <a class="nav-link" href="/bootstrap-home.html">Bootstrap</a>
+                            </li>
+                            <li class="nav-item m-3">
+                                <a class="nav-link" href="/js-home.html">Javascript</a>
+                            </li>
+                            <li class="nav-item m-3">
+                                <a class="nav-link  active" href="/jquery-home.html">jQuery</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        
+            <!--Sidebar-->
+            <nav class="navbar navbar-expand-md bg-light navbar-light d-flex flex-column align-items-start " id="sidebar">
+                <div class="container">
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#sidenav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse  navbar-collapse collapse-horizontal" id="sidenav">
+                    <ul class="navbar-nav d-block fs-3">
+                        <li class="nav-item dropdown w-100">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="collapse" href="#jqday1" 
+                                aria-expanded="false" aria-controls="collapse">Day-1</a>
+                            <ul class="collapse" id="jqday1">
+                                <li><a href="/jQuery/Day1/Practice Exercise/PracticeExercise(1).html" class="nav-link">Practice Exercise-1</a></li>
+                                <li><a href="/jQuery/Day1/Practice Exercise/PracticeExercise(2).html" class="nav-link">Practice Exercise-2</a></li>
+                                <li><a href="/jQuery/Day1/Practice Exercise/PracticeExercise(3).html" class="nav-link">Practice Exercise-3</a></li>
+                                <li><a href="/jQuery/Day1/Assignment/assignment.html" class="nav-link">Assignment</a></li>
+                            </ul>                        
+                        </li>
+        
+                        <li class="nav-item dropdown w-100">
+                            <a class="nav-link active dropdown-toggle" data-bs-toggle="collapse" href="#jqday2" 
+                                aria-expanded="false" aria-controls="collapse">Day-2</a>
+                            <ul class="collapse" id="jqday2">
+                                <li><a href="/jQuery/Day2/Practice Exercise/parent.html" class="nav-link">Parent</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/parents.html" class="nav-link">Parents</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/parentsUntil.html" class="nav-link">ParentsUntil</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/children.html" class="nav-link">Children</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/find.html" class="nav-link">Find</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/siblings.html" class="nav-link">Siblings</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/next.html" class="nav-link">Next</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/nextAll.html" class="nav-link">NextAll</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/nextUntil.html" class="nav-link">NextUntil</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/prev.html" class="nav-link">Prev</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/prevAll.html" class="nav-link active">PrevAll</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/prevUntil.html" class="nav-link">PrevUntil</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/filter.html" class="nav-link">Filter</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/ajax_load.html" class="nav-link">Ajax Load</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/ajax_get_post.html" class="nav-link">Ajax Get/Post</a></li>
+                                <li><a href="/jQuery/Day2/Practice Exercise/ajax_json.html" class="nav-link">Ajax JSON</a></li>
+                                <li><a href="/jQuery/Day2/Assignment/assignment.html" class="nav-link">Assignment</a></li>
+                            </ul>                        
+                        </li>
+                    </ul>   
+                </div>
+            </div>
+            </nav>
+            
+    
+<div class="container" id="content">    
+    <!--Header-->
+    <div class="container text-center mt-2">
+        <h1 class="display1">prevAll()</h1>
+        <hr>
+    </div>
+
+    <!--Main-->
+    <div class="container mt-3 p-2 border" id="div1">
+        
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        
+    
+    </div>
+</div>    
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
