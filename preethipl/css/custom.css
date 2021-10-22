@@ -1,0 +1,154 @@
+body{
+    margin-top: 140px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.navbar{
+    box-shadow: 2px 2px 5px rgb(6, 6, 179);
+    background: #fff;
+}
+
+.navbar .nav-item{
+    font-size: 1.4rem;
+    padding-right: 20px;
+}
+
+#showcase img{
+    height: 90vh;
+    width: 100%;
+}
+
+.quote{
+    width: 50%;
+    margin: auto;
+    border-bottom: 1px #ddd solid;
+}
+
+#technology .card-body img{
+    height: 100px;
+}
+
+#technology .card-body .fa{
+    color: white;
+}
+
+#submitbtn{
+    background-color: rgb(6, 6, 179);
+    color:white;
+}
+
+#main-footer{
+    background-color:rgb(6, 6, 179);
+    z-index: 2;
+    position: absolute; 
+    width: 100%;
+}
+
+#main-footer .fa{
+    color: white;
+    font-size: 20px;
+}
+
+#sidebar{
+    height: 100%; 
+    position: fixed;
+    overflow-y: auto;
+    max-height: 85vh;
+    z-index: 1;
+}
+
+#exercise .nav-link{
+    font-size: 1.5rem;
+}
+
+#assignment .nav-link{
+    font-size: 1.5rem;
+}
+
+#content{
+    margin-right: 0px ;
+    padding-left: 150px;
+    height: 70vh;
+    margin-bottom: 105px;
+    /* overflow-y: auto;  */
+    /* margin-top: 106px;  */
+}
+#imglogo{
+    padding-top: 70px;
+    text-align: center;
+}
+@media(max-width:600px){
+    #sidenav{
+        width: 15vw;
+    } 
+}
+@media(min-width:600px){
+    #sidenav{
+        width: 20vw;
+    }
+}
+@media(min-width:768px){
+    #sidenav{
+        width: 20vw;
+    }
+}
+@media(min-width:992px){
+    #sidenav{
+        width: 19vw;
+    }
+}
+@media(max-width:1200px){
+    
+}
+#citylist li{
+    display:inline;
+    margin: 10px;
+}
+
+#headingcolor h1,#headingcolor h2{
+    color:blue;
+}
+
+#resume header{
+    text-align: center;
+    color: white;
+    background-color: teal;
+    padding: 5px;
+    width:auto;
+}
+#resume footer{
+    background-color:teal;
+    padding: 40px;
+    width: auto;
+}
+#resume div.main{
+    margin:15px 200px;
+    border: 2px ridge black;
+    padding: 25px;
+}
+#resume div.para{
+    font-family: serif;
+    color:black;
+    text-align:justify;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+#resume h2{
+    font-family: serif;
+    color:black; 
+}
+#resume h4{
+    font-family: serif;
+    color:dimgray;
+    margin-left: 10px;
+}
+#resume h5{
+    font-family: serif;
+    color:teal;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 16px; 
+}
+
